@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "astro-build.astro-vscode",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "mikestead.dotenv",
+    "dbaeumer.vscode-eslint",
+    "pkief.material-icon-theme",
+    "astro-build.houston",
+    "unifiedjs.vscode-mdx"
+  ],
+  "unwantedRecommendations": []
+}

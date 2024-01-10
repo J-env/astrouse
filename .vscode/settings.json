@@ -1,0 +1,78 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.minimap.enabled": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "files.associations": {
+    "*.mdx": "markdown"
+  },
+  "prettier.documentSelectors": ["**/*.astro"],
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "files.eol": "\n"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "html.hover.references": false,
+  "iconify.languageIds": ["astro", "typescriptreact", "html"],
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "astro"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "classList",
+    "class:list",
+    "data-class",
+    "arrow-class",
+    "php-class",
+    "html-class",
+    "app-class",
+    "button-class",
+    "box-class",
+    "wrap-class",
+    "max-class",
+    "img-class",
+    "scroll-class",
+    "-class"
+  ],
+  "tailwindCSS.files.exclude": [
+    "**/.git/**",
+    "**/.vscode/**",
+    "**/.idea/**",
+    "**/.history/**",
+    "**/.sublime/**",
+    "**/.hg/**",
+    "**/.DS_Store/**",
+    "**/.env/**",
+    "**/.log/**",
+    "**/.tsbuildinfo/**",
+    "**/.cache/**",
+    "**/logs/**",
+    "**/node_modules/**",
+    "**/.rpt2_cache/**",
+    "**/.rts2_cache_cjs/**",
+    "**/.rts2_cache_es/**",
+    "**/.rts2_cache_umd/**",
+    "**/.node_repl_history/**",
+    "**/.dist/**",
+    "**/dist/**",
+    "**/public/**",
+    "**/scripts/**",
+    "**/coverage/**",
+    "**/types/**"
+  ]
+}

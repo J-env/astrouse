@@ -1,0 +1,14 @@
+{
+  "name": "@astrouse/docs",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev --host",
+    "build": "astro check && npx tsc --noEmit && astro build"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": true,
+    "noEmit": true,
+    "outDir": "temp",
+    "jsx": "preserve",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "sourceMap": false,
+    "target": "es2016",
+    "module": "ESNext",
+    "newLine": "LF",
+    "useDefineForClassFields": false,
+    // "declaration": false,
+    // "emitDeclarationOnly": false,
+    "removeComments": false,
+    // "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    // "noUnusedParameters": false,
+    // "noImplicitReturns": false,
+    // "noImplicitAny": false,
+    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "/*": ["./*"],
+      "@astrouse/*": ["packages/*/src"]
+    },
+    "types": ["vitest/globals", "node"]
+  },
+  "include": [
+    "packages/global.d.ts",
+    "packages/*/__tests__",
+    "packages/**/src",
+    "packages/**/*.ts",
+    "packages/**/*.tsx",
+    "packages/**/*.d.ts",
+    "packages/**/*.astro",
+    "packages/**/*.vue",
+    "scripts/*",
+    "rollup.*.js"
+  ],
+  "exclude": []
+}

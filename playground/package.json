@@ -1,0 +1,19 @@
+{
+  "name": "@astrouse/playground",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run disable:telemetry && astro dev --host --open",
+    "start": "npm run dev",
+    "astro:check": "astro check && vue-tsc --noEmit && npx tsc --noEmit",
+    "astro": "astro",
+    "disable:telemetry": "npx astro telemetry disable",
+    "build": "npx cross-env ASTRO_ENV=production astro build",
+    "prettier:write": "npx prettier -w ."
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
