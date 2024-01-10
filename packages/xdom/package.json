@@ -1,0 +1,35 @@
+{
+  "name": "@astrouse/xdom",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "buildOptions": {},
+  "keywords": [
+    "astrouse"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "bugs": {
+    "url": "https://github.com/J-env/astrouse/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-env/astrouse.git",
+    "directory": "packages/xdom"
+  },
+  "author": "",
+  "license": "ISC"
+}

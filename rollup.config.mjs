@@ -101,12 +101,6 @@ function createConfig(format, output, plugins = []) {
 
   let entryFile = /runtime$/.test(format) ? `src/runtime.ts` : `src/index.ts`;
 
-  if (isBrowserESMBuild || isBundlerESMBuild) {
-    entryFile = /runtime$/.test(format)
-      ? `src/esm-runtime.ts`
-      : `src/esm-index.ts`;
-  }
-
   // we are bundling forked consolidate.js in compiler-sfc which dynamically
   // requires a ton of template engines which should be ignored.
   function resolveNodePlugins() {

@@ -2,7 +2,7 @@
   "compilerOptions": {
     "strict": true,
     "allowJs": true,
-    "noEmit": true,
+    // "noEmit": true,
     "outDir": "temp",
     "jsx": "preserve",
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
