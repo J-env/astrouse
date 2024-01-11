@@ -24,7 +24,7 @@
 </div>
 
 <script>
-  import { Vuedom, createApp, reactive } from '@astrouse/xdom';
+  import Xdom, { createApp, reactive } from '@astrouse/xdom';
 
   const store = reactive({});
 
@@ -45,7 +45,7 @@
 
   app.mount();
 
-  Vuedom.scope('counter', (props, $el) => {
+  Xdom.scope('counter', (props, $el) => {
     return {
       count: props.count,
       increment() {
@@ -127,21 +127,21 @@
 ## api
 
 ```ts
-import { Vuedom } from '@astrouse/xdom';
+import Xdom from '@astrouse/xdom';
 
-Vuedom.scope('counter', () => {
+Xdom.scope('counter', () => {
   return {};
 });
 
-Vuedom.store('counter', {});
+Xdom.store('counter', {});
 
-Vuedom.plugin('collapse', function () {});
+Xdom.plugin('collapse', function () {});
 
-Vuedom.directive('my-directive', function () {});
+Xdom.directive('my-directive', function () {});
 
-Vuedom.magic('clipboard', {});
+Xdom.magic('clipboard', {});
 
-Vuedom.bind('SomeAttrs', () => ({
+Xdom.bind('SomeAttrs', () => ({
   type: 'button',
 
   'on:click'() {

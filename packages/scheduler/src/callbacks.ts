@@ -168,6 +168,7 @@ function enqueue(taskQueue: Task[], task: Task) {
   }
 
   taskQueue.splice(findIndex(), 0, task);
+  // taskQueue.push(task);
 }
 
 function flushWork(hasTimeRemaining: boolean, initialTime: number) {
