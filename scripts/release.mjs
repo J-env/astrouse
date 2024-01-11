@@ -179,13 +179,12 @@ async function runUpdateVersions() {
 async function runBuilding() {
   step('\nBuilding all packages...');
 
+  await run('pnpm', ['check']);
+
   if (!skipBuild && !isDryRun) {
     // pnpm run build --release
     await run('pnpm', ['run', 'build', '--release']);
     // await run('pnpm', ['run', 'build']);
-
-    step('\nTesting built types...');
-    await run('pnpm', ['test-dts-only']);
   } else {
     console.log(`(skipped)`);
   }
