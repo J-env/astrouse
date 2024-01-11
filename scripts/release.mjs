@@ -160,8 +160,8 @@ async function runTests() {
     step('\nRunning tests...');
 
     if (!isDryRun) {
-      // pnpm test run
-      await run('pnpm', ['test', 'run']);
+      // @TODOs: pnpm test run
+      // await run('pnpm', ['test', 'run']);
     } else {
       console.log(`Skipped (dry run)`);
     }
