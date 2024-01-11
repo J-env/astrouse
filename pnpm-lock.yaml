@@ -215,6 +215,12 @@ importers:
 
   docs: {}
 
+  packages/events: {}
+
+  packages/scheduler: {}
+
+  packages/xdom: {}
+
   playground: {}
 
 packages:
